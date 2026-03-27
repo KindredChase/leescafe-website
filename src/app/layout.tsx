@@ -16,9 +16,9 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Lees Cafe | 소박한 미국식 식당",
+  title: "Lees Cafe | 캐주얼 아메리칸 다이너",
   description:
-    "2020년 판교에서 시작한 소박한 미국식 식당 리스카페. 판교 · 정자 · 여의도에서 만나는 미국 가정식 브런치 & 디너.",
+    "2020년 판교에서 시작한 캐주얼 아메리칸 다이너 리스카페. 판교 · 정자 · 여의도에서 만나는 넉넉하고 따뜻한 미 서부식 브런치 & 디너.",
   keywords: [
     "리스카페",
     "판교맛집",
@@ -26,11 +26,13 @@ export const metadata: Metadata = {
     "여의도맛집",
     "브런치",
     "미국식식당",
+    "아메리칸다이너",
+    "이탈리안아메리칸",
   ],
   openGraph: {
-    title: "Lees Cafe | 소박한 미국식 식당",
+    title: "Lees Cafe | 캐주얼 아메리칸 다이너",
     description:
-      "판교 · 정자 · 여의도에서 만나는 미국 가정식 브런치 & 디너.",
+      "판교 · 정자 · 여의도에서 만나는 넉넉하고 따뜻한 미 서부식 브런치 & 디너.",
     url: "https://leescafe.vercel.app",
     siteName: "Lees Cafe",
     locale: "ko_KR",

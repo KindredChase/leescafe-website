@@ -2,13 +2,13 @@
 
 import { motion } from "framer-motion";
 import { fadeInUp, stagger } from "@/lib/animations";
-import { locations, waitingTips } from "@/lib/data";
-import { MapPin, Clock, Car, Clock3, Users, Utensils } from "lucide-react";
+import { locations, visitGuide } from "@/lib/data";
+import { MapPin, Clock, Car, Users, Utensils, Building } from "lucide-react";
 
-const tipIcons: Record<string, React.ElementType> = {
+const guideIcons: Record<string, React.ElementType> = {
   clock: Clock,
   users: Users,
-  "clock-3": Clock3,
+  building: Building,
   utensils: Utensils,
 };
 
@@ -118,26 +118,35 @@ export default function Locations() {
             ))}
           </motion.div>
 
-          {/* Waiting Tips */}
+          {/* Visit Guide */}
           <motion.div variants={fadeInUp} className="mt-16 bg-ivory p-8">
+            <p
+              className="text-[11px] tracking-[0.3em] text-brown-lt uppercase mb-2"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              Before You Visit
+            </p>
             <h3
-              className="text-lg font-bold italic text-brown mb-6"
+              className="text-lg font-bold italic text-brown mb-8"
               style={{ fontFamily: "var(--font-serif)" }}
             >
-              웨이팅 꿀팁
+              매장 이용 및 대기 안내
             </h3>
-            <div className="grid sm:grid-cols-2 gap-4">
-              {waitingTips.map((t, i) => {
-                const Icon = tipIcons[t.icon] || Clock;
+            <div className="grid sm:grid-cols-2 gap-6">
+              {visitGuide.map((g, i) => {
+                const Icon = guideIcons[g.icon] || Clock;
                 return (
                   <div key={i} className="flex items-start gap-3">
                     <Icon
-                      className="w-4 h-4 mt-0.5 shrink-0 text-burgundy"
+                      className="w-4 h-4 mt-1 shrink-0 text-burgundy"
                       strokeWidth={1.5}
                     />
-                    <p className="text-sm text-brown-mid leading-relaxed">
-                      {t.tip}
-                    </p>
+                    <div>
+                      <p className="text-sm font-bold text-brown mb-1">{g.title}</p>
+                      <p className="text-sm text-brown-mid leading-relaxed">
+                        {g.desc}
+                      </p>
+                    </div>
                   </div>
                 );
               })}

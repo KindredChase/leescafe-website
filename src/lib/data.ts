@@ -1,14 +1,14 @@
 export const brand = {
   name: "Lees Cafe",
   nameKo: "리스카페",
-  tagline: "소박한 미국식 식당",
+  tagline: "캐주얼 아메리칸 다이너",
   instagram: "@leesfamouscafe",
   instagramUrl: "https://www.instagram.com/leesfamouscafe/",
   foundedYear: 2020,
   story:
-    "2020년 판교 백현동 작은 골목에서 시작한 소박한 미국식 식당입니다. 언제든 와도 동네 사랑방 같은 편안하고 따뜻한 분위기로 사람과 사람을 연결합니다.",
+    "2020년 판교 백현동 작은 골목에서 시작한 캐주얼 아메리칸 다이너. 샌프란시스코의 활기와 뉴잉글랜드의 정성을 담아, 넉넉하고 따뜻한 미 서부식 한 끼를 대접합니다.",
   reviewQuote:
-    '"보이는 것보다 양이 엄청나게 많음 — 소식하는 사람 둘이서 가면 두 개는 못 먹을 것 같아요."',
+    '"미국 감성 제대로 나는 분위기. 보이는 것보다 양이 엄청나게 많아요 — 또 갈 의향이 있어요."',
 };
 
 export const menus = [
@@ -116,16 +116,32 @@ export const locations = [
   },
 ];
 
-export const waitingTips = [
-  { icon: "clock", tip: "오전 11시 이전 일찍 오면 웨이팅이 짧습니다." },
-  { icon: "users", tip: "2인 방문 시 바 자리를 이용하면 대기 없이 입장 가능한 경우가 많아요." },
-  { icon: "clock-3", tip: "오후 12시 30분 이후에는 점심 회전이 끝나 한적해지는 경우가 많습니다." },
-  { icon: "utensils", tip: "1인 1메뉴 주문이 기본이며, 메뉴당 양이 상당히 많습니다." },
+export const visitGuide = [
+  {
+    icon: "clock",
+    title: "권장 방문 시간",
+    desc: "오전 11시 이전 또는 오후 12시 30분(점심 1회전 종료) 이후 방문 시 대기 시간을 최소화할 수 있습니다.",
+  },
+  {
+    icon: "users",
+    title: "바 좌석 우선 배정",
+    desc: "2인 이하 방문 시 바(Bar) 좌석 이용에 동의하시면 일반 대기열과 무관하게 빠른 입장이 가능합니다.",
+  },
+  {
+    icon: "building",
+    title: "지점별 대기 시스템",
+    desc: "판교점·정자점은 매장 현장 대기 등록, 여의도점은 테이블링(Tabling) 시스템을 통한 현장 대기 접수입니다.",
+  },
+  {
+    icon: "utensils",
+    title: "주문 기준 및 제공량",
+    desc: "매장 내 취식 시 1인 1메뉴 주문이 기본이며, 모든 메인 디쉬는 일반적인 1인분 기준을 초과하는 넉넉한 양으로 제공됩니다.",
+  },
 ];
 
 export const spaceFeatures = [
-  { icon: "music", title: "올드 팝 플레이리스트", desc: "매장 분위기와 어울리는 빈티지 팝·재즈" },
-  { icon: "sun", title: "브런치 타임", desc: "햇살 좋은 낮, 여유로운 브런치 한 끼" },
-  { icon: "gem", title: "공간 디테일", desc: "미국 레스토랑 감성의 세심한 소품 구성" },
-  { icon: "sparkles", title: "저녁 디너", desc: "따뜻한 조명 아래 편안한 디너 타임" },
+  { icon: "music", title: "빈티지 팝 & 재즈", desc: "경쾌한 빈티지 팝이 채우는 활기찬 다이너 공간" },
+  { icon: "sun", title: "브런치 타임", desc: "햇살 좋은 낮, 넉넉한 미 서부식 브런치 한 끼" },
+  { icon: "gem", title: "다이너 디테일", desc: "미국 다이너 감성의 세심한 소품과 인테리어" },
+  { icon: "sparkles", title: "디너 타임", desc: "따뜻한 조명과 친절한 에너지가 채우는 저녁" },
 ];

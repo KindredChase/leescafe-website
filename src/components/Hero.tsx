@@ -37,13 +37,13 @@ export default function Hero() {
             className="text-4xl sm:text-5xl lg:text-[3.5rem] font-bold italic leading-[1.15] text-brown"
             style={{ fontFamily: "var(--font-serif)" }}
           >
-            올드 팝송이
+            샌프란시스코의
             <br />
-            흐르는,
+            활기가 담긴,
             <br />
-            작은 미국식
+            캐주얼 아메리칸
             <br />
-            식당.
+            다이너.
           </motion.h1>
 
           <motion.p
@@ -51,7 +51,7 @@ export default function Hero() {
             className="text-base text-brown-mid max-w-sm leading-relaxed font-light"
           >
             판교 &middot; 정자 &middot; 여의도에서 만나는
-            미국 가정식 브런치 &amp; 디너. 소박하지만 넉넉한 한 끼를 대접합니다.
+            아낌없이 담아낸, 넉넉하고 따뜻한 미 서부식 한 끼.
           </motion.p>
 
           <motion.div variants={item} className="flex flex-wrap gap-4 mt-2">
@@ -96,7 +96,7 @@ export default function Hero() {
               className="text-cream/90 text-sm italic leading-relaxed mb-2"
               style={{ fontFamily: "var(--font-serif)" }}
             >
-              &ldquo;보이는 것보다 양이 엄청나게 많아요.&rdquo;
+              &ldquo;미국 감성 제대로 나는 분위기.&rdquo;
             </p>
             <p
               className="text-cream/50 text-[10px] tracking-[0.15em] uppercase"

@@ -29,17 +29,17 @@ export default function SpaceMood() {
               className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold italic text-cream leading-tight"
               style={{ fontFamily: "var(--font-serif)" }}
             >
-              올드 팝이 흐르는
+              경쾌한 에너지가
               <br />
-              공간
+              채우는 공간
             </motion.h2>
             <motion.p
               variants={fadeInUp}
               className="text-cream/60 leading-[1.8] self-end"
             >
-              자리에 앉으면 잠시라도 외국 여행 온 것 같은 기분이 드는 곳이에요.
-              조도를 낮춘 레스토랑, 올드 팝이 흐르고, 소품 하나까지 신경 써
-              완성한 공간입니다. 낮에는 브런치, 저녁에는 편안한 디너로 —
+              경쾌한 빈티지 팝과 친절한 에너지가 채우는 공간.
+              미국 다이너 감성의 세심한 소품 구성과 활기찬 분위기 속에서,
+              낮에는 넉넉한 브런치, 저녁에는 따뜻한 디너를 즐기세요.
               어떤 시간에 와도 리스카페입니다.
             </motion.p>
           </div>

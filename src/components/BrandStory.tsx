@@ -30,24 +30,24 @@ export default function BrandStory() {
               variants={fadeInUp}
               className="text-brown-mid leading-[1.8] mb-6"
             >
-              2020년 판교 백현동 작은 골목에서 시작한 소박한 미국식 식당입니다.
-              올드 팝이 흐르는 공간에서, 정성 들여 만든 미국 가정식 한 끼를
-              대접합니다.
+              2020년 판교 백현동 작은 골목에서 시작한 캐주얼 아메리칸 다이너.
+              뉴잉글랜드 클램 차우더부터 샌프란시스코 갈릭 누들, 이탈리안-아메리칸
+              라자냐까지 — 미국 각지의 맛을 한 공간에 담았습니다.
             </motion.p>
             <motion.p
               variants={fadeInUp}
               className="text-brown-mid leading-[1.8] mb-6"
             >
-              우리 주방은 매일 아침 직접 끓이는 차우더, 층층이 쌓아올린 라자냐,
-              치즈가 흘러나오는 수제 미트볼까지 — 어떤 메뉴를 시켜도
-              실패 없는 한 접시를 약속합니다.
+              경쾌한 빈티지 팝과 친절한 에너지가 채우는 공간에서,
+              아낌없이 담아낸 넉넉한 한 접시를 대접합니다.
+              모든 메인 디쉬는 일반적인 1인분 기준을 초과하는 넉넉한 양으로 제공됩니다.
             </motion.p>
             <motion.p
               variants={fadeInUp}
               className="text-brown-mid leading-[1.8]"
             >
-              언제든 와도 동네 사랑방 같은 편안하고 따뜻한 분위기로
-              사람과 사람을 연결합니다. 리스카페에 한 번 오시면 또 오게 됩니다.
+              시끌벅적하고 활기찬 다이너 분위기 속에서
+              미국 서부의 에너지를 느껴보세요. 리스카페에 한 번 오시면 또 오게 됩니다.
             </motion.p>
           </div>
 
@@ -60,15 +60,15 @@ export default function BrandStory() {
               className="text-cream/90 text-xl lg:text-2xl italic leading-[1.6] mb-8"
               style={{ fontFamily: "var(--font-serif)" }}
             >
-              &ldquo;가격은 좀 있지만,
+              &ldquo;미국 다이너 느낌
               <br />
-              그만큼의 양과 맛으로
+              제대로 나는 분위기.
               <br />
-              보답하는 곳.
+              양이 엄청나게
               <br />
-              또 갈 의향이
+              많아요 — 또 갈
               <br />
-              있어요.&rdquo;
+              의향이 있어요.&rdquo;
             </p>
             <div className="border-t border-cream/20 pt-4">
               <p
