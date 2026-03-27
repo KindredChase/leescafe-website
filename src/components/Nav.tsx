@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const links = [
   { label: "메뉴", href: "#menu", highlight: true },
@@ -29,12 +30,14 @@ export default function Nav() {
     >
       <div className="mx-auto max-w-7xl flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <a
-          href="#"
-          className="text-xl italic font-bold text-brown tracking-tight"
-          style={{ fontFamily: "var(--font-serif)" }}
-        >
-          Lees Cafe
+        <a href="#" className="shrink-0">
+          <Image
+            src="/menu/LeesCafe Logo.png"
+            alt="Lees Cafe"
+            width={48}
+            height={48}
+            className="h-10 w-auto"
+          />
         </a>
 
         {/* Desktop links */}

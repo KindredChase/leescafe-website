@@ -20,7 +20,7 @@ export const menus = [
     price: "₩16,800",
     priceRange: "브런치",
     tag: "Best",
-    image: "https://images.unsplash.com/photo-1613844237701-8f3664fc2eff?w=600&q=80",
+    image: "/menu/menu-01-chowder.jpg",
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ export const menus = [
     price: "₩22,000~",
     priceRange: "메인",
     tag: "Signature",
-    image: "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=600&q=80",
+    image: "/menu/menu-02-lasagna.jpg",
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ export const menus = [
     price: "₩24,900",
     priceRange: "메인",
     tag: "Popular",
-    image: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=600&q=80",
+    image: "/menu/menu-03-shrimp-pasta.jpg",
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ export const menus = [
     price: "₩22,000~",
     priceRange: "메인",
     tag: "",
-    image: "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=600&q=80",
+    image: "/menu/menu-04-meatball.jpg",
   },
   {
     id: 5,
@@ -60,17 +60,17 @@ export const menus = [
     price: "₩22,000~",
     priceRange: "메인",
     tag: "",
-    image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&q=80",
+    image: "/menu/menu-05-garlic-noodle.jpg",
   },
   {
     id: 6,
-    name: "멕시칸 타코볼 샐러드",
-    nameEn: "Mexican Taco Bowl Salad",
-    desc: "재료가 넘칠 정도로 가득 담긴 타코볼. 상큼하고 안느끼한 쉬림프 타코 느낌.",
+    name: "찹 샐러드",
+    nameEn: "Chop Salad",
+    desc: "재료가 넘칠 정도로 가득 담긴 찹 샐러드. 상큼하고 안느끼한 한 그릇.",
     price: "₩22,000~",
     priceRange: "브런치",
     tag: "Must",
-    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80",
+    image: "/menu/menu-06-chop-salad.jpg",
   },
 ];
 

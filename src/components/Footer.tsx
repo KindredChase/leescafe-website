@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { brand, locations } from "@/lib/data";
 
 export default function Footer() {
@@ -8,12 +9,13 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <p
-              className="text-xl font-bold italic text-brown mb-2"
-              style={{ fontFamily: "var(--font-serif)" }}
-            >
-              {brand.name}
-            </p>
+            <Image
+              src="/menu/LeesCafe Logo.png"
+              alt="Lees Cafe"
+              width={64}
+              height={64}
+              className="h-12 w-auto mb-3"
+            />
             <p className="text-sm text-brown-mid leading-relaxed">
               {brand.tagline}. 판교 백현동에서 시작해
               사람과 사람을 연결합니다.
