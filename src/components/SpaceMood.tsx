@@ -1,27 +1,16 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeInUp, stagger } from "@/lib/animations";
+import { spaceFeatures } from "@/lib/data";
+import { Music, Sun, Gem, Sparkles } from "lucide-react";
 
-const spaceTiles = [
-  {
-    title: "The Ritual",
-    titleKo: "브런치 타임",
-    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80",
-  },
-  {
-    title: "",
-    titleKo: "",
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",
-    quote: "소품 하나까지 신경 써 완성한, 잠시 여행 온 것 같은 공간.",
-  },
-  {
-    title: "The Collection",
-    titleKo: "공간 디테일",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80",
-  },
-];
+const iconMap: Record<string, React.ElementType> = {
+  music: Music,
+  sun: Sun,
+  gem: Gem,
+  sparkles: Sparkles,
+};
 
 export default function SpaceMood() {
   return (
@@ -55,52 +44,37 @@ export default function SpaceMood() {
             </motion.p>
           </div>
 
-          {/* Image Grid — 3 tiles */}
+          {/* Feature Grid — 2x2 */}
           <motion.div
             variants={stagger}
-            className="grid sm:grid-cols-3 gap-4"
+            className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"
           >
-            {spaceTiles.map((tile, i) => (
-              <motion.div
-                key={i}
-                variants={fadeInUp}
-                className="relative aspect-[3/4] overflow-hidden group"
-              >
-                <Image
-                  src={tile.image}
-                  alt={tile.titleKo || "리스카페 공간"}
-                  fill
-                  className="object-cover brightness-75 group-hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 640px) 100vw, 33vw"
-                />
-
-                {/* Title overlay at bottom */}
-                {tile.title && (
-                  <div className="absolute bottom-0 inset-x-0 p-5">
-                    <p
-                      className="text-cream text-lg italic"
-                      style={{ fontFamily: "var(--font-serif)" }}
-                    >
-                      {tile.title}
-                    </p>
-                  </div>
-                )}
-
-                {/* Quote overlay for middle tile */}
-                {tile.quote && (
-                  <div className="absolute inset-0 flex items-center justify-center p-6">
-                    <div className="bg-forest/90 p-5 max-w-[220px]">
-                      <p
-                        className="text-cream/90 text-sm italic leading-relaxed"
-                        style={{ fontFamily: "var(--font-serif)" }}
-                      >
-                        &ldquo;{tile.quote}&rdquo;
-                      </p>
-                    </div>
-                  </div>
-                )}
-              </motion.div>
-            ))}
+            {spaceFeatures.map((f) => {
+              const Icon = iconMap[f.icon];
+              return (
+                <motion.div
+                  key={f.icon}
+                  variants={fadeInUp}
+                  className="bg-brown-mid/20 border border-cream/10 p-8 hover:-translate-y-1 transition-transform duration-300"
+                >
+                  {Icon && (
+                    <Icon
+                      className="w-6 h-6 text-cream/50 mb-4"
+                      strokeWidth={1.5}
+                    />
+                  )}
+                  <h3
+                    className="text-base font-bold italic text-cream mb-2"
+                    style={{ fontFamily: "var(--font-serif)" }}
+                  >
+                    {f.title}
+                  </h3>
+                  <p className="text-sm text-cream/50 leading-relaxed">
+                    {f.desc}
+                  </p>
+                </motion.div>
+              );
+            })}
           </motion.div>
         </motion.div>
       </div>

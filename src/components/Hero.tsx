@@ -81,7 +81,7 @@ export default function Hero() {
         >
           <div className="relative aspect-[4/5] lg:aspect-[3/4] w-full">
             <Image
-              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&q=80"
+              src="/menu/hero-main.jpg"
               alt="리스카페 레스토랑 분위기"
               fill
               priority
