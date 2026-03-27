@@ -84,20 +84,12 @@ export default function SignatureMenu() {
 
                 {/* Content */}
                 <div className="p-5">
-                  <div className="flex items-baseline justify-between mb-2">
-                    <h3
-                      className="text-lg font-bold text-brown"
-                      style={{ fontFamily: "var(--font-serif)" }}
-                    >
-                      {menu.name}
-                    </h3>
-                    <span
-                      className="text-sm text-burgundy shrink-0 ml-2"
-                      style={{ fontFamily: "var(--font-display)" }}
-                    >
-                      {menu.price}
-                    </span>
-                  </div>
+                  <h3
+                    className="text-lg font-bold text-brown mb-2"
+                    style={{ fontFamily: "var(--font-serif)" }}
+                  >
+                    {menu.name}
+                  </h3>
                   <p className="text-sm text-brown-mid leading-relaxed">
                     {menu.desc}
                   </p>
