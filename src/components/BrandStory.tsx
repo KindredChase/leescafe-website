@@ -60,15 +60,15 @@ export default function BrandStory() {
               className="text-cream/90 text-xl lg:text-2xl italic leading-[1.6] mb-8"
               style={{ fontFamily: "var(--font-serif)" }}
             >
-              &ldquo;미국 다이너 느낌
+              &ldquo;웨이팅이 아깝지 않은
               <br />
-              제대로 나는 분위기.
+              확실한 맛.
               <br />
-              양이 엄청나게
+              첫 방문 이후
               <br />
-              많아요 — 또 갈
+              자연스럽게 단골이
               <br />
-              의향이 있어요.&rdquo;
+              되었습니다.&rdquo;
             </p>
             <div className="border-t border-cream/20 pt-4">
               <p
